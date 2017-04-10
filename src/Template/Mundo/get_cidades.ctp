@@ -1,0 +1,1 @@
+<?= $this->Form->input('cidid', ['options'=>$cidades,'empty'=>'Selecione a Cidade','label'=>'Cidades:', 'escape'=>false]); ?>
