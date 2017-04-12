@@ -8,7 +8,7 @@ function atualizaEstado(){
 		type:'POST',
 		async: true,
 		cache: false,
-		url: '/world/mundo/getEstados',
+		url: window.location.href + 'mundo/getEstados',
 		data:{paiid: jQuery('#paiid').val()},
 		success: function(response){	
 			jQuery('#estid').html(response).show();
@@ -25,7 +25,7 @@ function atualizaCidade(){
 		type:'POST',
 		async: true,
 		cache: false,
-		url: '/world/mundo/getCidades',
+		url: window.location.href + 'mundo/getCidades',
 		data:{estid: jQuery('#estid').val(), paiid: jQuery('#paiid').val()},
 		success: function(response){	
 			jQuery('#cidid').html(response).show();
@@ -60,7 +60,7 @@ function showDados(){
 		type:'POST',
 		async: true,
 		cache: false,
-		url: '/world/mundo/showDados',
+		url: window.location.href + 'mundo/showDados',
 		data:{paiid: jQuery('#paiid').val(), estid: jQuery('#estid').val(), cidid: jQuery('#cidid').val()},
 		success: function(response){	
 			jQuery('#divDados').html(response).show();
@@ -77,7 +77,7 @@ function existeEstado(){
 		type:'POST',
 		async: true,
 		cache: false,
-		url: '/world/mundo/existeEstado',
+		url: window.location.href + 'mundo/existeEstado',
 		data:{paiid: jQuery('#paiid').val()},
 		success: function(response){	
 			if($.trim(response) == 'N'){
