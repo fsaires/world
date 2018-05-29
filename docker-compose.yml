@@ -1,0 +1,23 @@
+version: '3.1'
+services:
+  webserver:
+    image: fsaires/myserverphp5
+    container_name: world
+    links:
+        - database
+    volumes:
+        - ./:/var/www/html
+    ports:
+        - 80:80
+  database:
+      image: mysql:5.6
+      container_name: worlddb
+      restart: always
+      volumes:
+        - ./db/mysql:/var/lib/mysql:rw
+      ports:
+        - "3307:3306"
+      environment:
+        - MYSQL_USER=world
+        - MYSQL_ROOT_PASSWORD=world
+        - MYSQL_DATABASE=world

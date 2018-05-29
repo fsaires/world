@@ -1,3 +1,4 @@
+/db
 /vendor/*
 /config/app.php
 /tmp/*
