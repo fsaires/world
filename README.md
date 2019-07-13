@@ -12,15 +12,21 @@ Este repositório contém uma aplicação em CakePHP 3.0 com Bootstrap 3.0.
 
 - Clone repository: 
 
+```
 git clone https://github.com/fsaires/world.git
+```
 
 - Run Docker Compose: 
 
+```
 $ docker-compose up -d
+```
 
 - Access: 
 
+```
 http://localhost
+```
 
 ## Doubts / Dúvidas
 
