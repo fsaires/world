@@ -1,25 +1,27 @@
-# CakePHP Application Skeleton
+# World - Combo com países, estados e cidades.
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
-[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+Este repositório contém uma aplicação em CakePHP 3.0 com Bootstrap 3.0. 
 
-A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
+## Pre Requisits / Pré-requisitos
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+- PHP
+- Mysql
+- Docker
 
-## Installation
+## Installation / Instalação
 
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+- Clone repository: 
 
-If Composer is installed globally, run
-```bash
-composer create-project --prefer-dist cakephp/app [app_name]
-```
+git clone https://github.com/fsaires/world.git
 
-You should now be able to visit the path to where you installed the app and see the default home page.
+- Run Docker Compose: 
 
-## Configuration
+$ docker-compose up -d
 
-Read and edit `config/app.php` and setup the 'Datasources' and any other
-configuration relevant for your application.
+- Access: 
+
+http://localhost
+
+## Doubts / Dúvidas
+
+Qualquer dúvida entre em contato: mailto:fsaires@gmail.com
