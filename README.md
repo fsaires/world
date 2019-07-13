@@ -30,4 +30,4 @@ http://localhost
 
 ## Doubts / Dúvidas
 
-Qualquer dúvida entre em contato: mailto:fsaires@gmail.com
+Qualquer dúvida entre em contato: fsaires@gmail.com
